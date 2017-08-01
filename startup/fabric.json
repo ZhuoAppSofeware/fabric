@@ -1,0 +1,17 @@
+{
+  "uuid": "test",
+  "orderer": {
+    "url": "grpcs://localhost:7050",
+    "pemPath": "crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt",
+    "sslTargetNameOverride": "orderer.example.com"
+  },
+  "peers": [
+    {
+      "url": "grpcs://localhost:7051",
+      "pemPath": "crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt",
+      "sslTargetNameOverride": "peer0.org1.example.com",
+      "eventUrl": "grpcs://localhost:7053"
+    }
+  ],
+  "mspId": "Org1MSP"
+}
